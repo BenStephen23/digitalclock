@@ -5,27 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Clock</title>
     <link rel="stylesheet" href="clock.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="mx-0 my-0 flex flex-col">
     <h2>Digital Clock</h2>
-    <div class="clock">
+    <div class="clock flex">
         <div>
-            <span>00</span>
-            <span>Hours</span>
+            <span id="hours">00</span>
+            <span class="text">Hours</span>
         </div>
 
         <div>
-            <span>00</span>
-            <span>Minutes</span>
+            <span id="minutes">00</span>
+            <span class="text">Minutes</span>
         </div>
 
         <div>
-            <span>00</span>
-            <span>Seconds</span>
+            <span id="seconds">00</span>
+            <span class="text">Seconds</span>
         </div>
 
         <div>
-            <span>AM</span>
+            <span id="ampm">AM</span>
+        </div>
+
+    </div>
+
+    <div class="date flex">
+        <div>
+            <span id="day">00</span>
+            <span class="text">Day</span>
+        </div>
+
+        <div>
+            <span id="month">00</span>
+            <span class="text" id="mth">Month</span>
+        </div>
+
+        <div>
+            <span id="year" class="year">00</span>
+            <span class="text yemt">Year</span>
+        </div>
+
+        <div>
+            <span id="dotw">Sunday</span>
         </div>
     </div>
     
